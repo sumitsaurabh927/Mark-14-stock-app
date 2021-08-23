@@ -14,10 +14,14 @@ btn.addEventListener("click", onClick)
 
 function showResults(ini, fin, qty) {
     if (ini > fin) {
-        console.log("loss");
+        var loss = (ini - fin) * qty;
+        var lossPc = ((loss) / ini) * 100
+        console.log("loss of " + loss + "\n i.e,. " + lossPc + "%");
     } else if (ini < fin) {
-        console.log("profit");
+        var profit = (fin - ini) * qty
+        var profitPc = ((profit) / ini) * 100
+        console.log("profit of " + profit + "\n i.e,. " + profitPc + "%");
     } else {
-        console.log("nothing");
+        console.log("better luck next time");
     }
 }
