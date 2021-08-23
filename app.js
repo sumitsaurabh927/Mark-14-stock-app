@@ -7,7 +7,6 @@ var profitGif = document.querySelector("#profit")
 var lossGif = document.querySelector("#loss")
 var nothingGif = document.querySelector("#nothing")
 
-
 profitGif.style.display = "none";
 lossGif.style.display = "none";
 nothingGif.style.display = "none";
@@ -30,6 +29,8 @@ function showResults(ini, fin, qty) {
         var lossPc = ((loss) / ini) * 100
         out.innerText = "Loss of ₹" + loss + "\n i.e., " + lossPc + "%"
         lossGif.style.display = "block";
+        out.style.color="red"
+        
 
     } else if (ini < fin) {
         lossGif.style.display = "none";
@@ -38,11 +39,15 @@ function showResults(ini, fin, qty) {
         var profitPc = ((profit) / ini) * 100
         out.innerText = "Profit of ₹" + profit + "\n i.e., " + profitPc + "%"
         profitGif.style.display = "block";
+        out.style.color="green"
+
     } else {
         profitGif.style.display = "none";
         lossGif.style.display = "none";
         out.innerText = "Better luck next time"
         nothingGif.style.display = "block";
+        out.style.color="purple"
+
 
     }
 }

@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body {
     text-align: center;
+    margin:0;
+    padding: 0;
+    background-color: #a8dadc;
+    font-family: 'Raleway', sans-serif;
 }
 
 label {
