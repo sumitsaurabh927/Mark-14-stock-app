@@ -1,7 +1,13 @@
-body{
+body {
     text-align: center;
 }
-label{
+
+label {
     display: block;
-    padding: 0.8rem ;
+    padding: 0.8rem;
+}
+
+img {
+    margin: auto;
+    padding: 0.5rem;
 }
